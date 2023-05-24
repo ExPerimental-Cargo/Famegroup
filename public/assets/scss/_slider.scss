@@ -1,0 +1,114 @@
+.section-media {
+  padding: 0;
+  h2.title {
+    padding: 12.5vw 12.5vw 0;
+  }
+}
+
+.swiper {
+  margin-top: 0.5vw;
+}
+
+.swiper-slide {
+  padding: 0 12.5vw 4vw 12.5vw;
+}
+
+.swiper-button-next {
+  right: 10vw !important;
+  width: 5vw !important;
+  height: 5vw !important;
+  background: $primary-color;
+  border-radius: 999999px;
+}
+
+.swiper-button-prev {
+  left: 10vw !important;
+  width: 5vw !important;
+  height: 5vw !important;
+  background: $primary-color;
+  border-radius: 999999px;
+}
+
+:root {
+  --swiper-theme-color: white !important;
+  --swiper-navigation-size: 2.5vw !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-weight: 900 !important;
+  position: relative;
+}
+.swiper-button-next:after {
+  left: 0.2vw;
+}
+
+.swiper-button-prev:after {
+  right: 0.2vw;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: 43% !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: $primary-color !important;
+}
+
+.swiper-pagination-bullet {
+  width: 1.042vw !important;
+  height: 1.042vw !important;
+  margin: 0 0.521vw !important;
+  border-radius: 0 !important;
+}
+
+.swiper-button-disabled {
+  opacity: 1 !important;
+  background: rgba(200, 200, 200, 0.7);
+}
+
+@media (max-width: 767px) {
+  .section-media {
+    padding: 0;
+    h2.title {
+      padding: 22.222vw 4.444vw 0;
+    }
+  }
+  .swiper-slide {
+    padding: 0 11.111vw 7.778vw;
+  }
+
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 0 !important;
+  }
+  .swiper-pagination-bullet {
+    width: 3.333vw !important;
+    height: 3.333vw !important;
+    margin: 0 1.667vw !important;
+    border-radius: 0 !important;
+  }
+  .swiper-button-next {
+    right: 5vw !important;
+    width: 13.333vw !important;
+    height: 13.333vw !important;
+  }
+
+  .swiper-button-prev {
+    left: 5vw !important;
+    width: 13.333vw !important;
+    height: 13.333vw !important;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 46% !important;
+  }
+  :root {
+    --swiper-theme-color: white !important;
+    --swiper-navigation-size: 6vw !important;
+  }
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    position: relative;
+  }
+}

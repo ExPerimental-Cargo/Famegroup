@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "famegroup-d85c1",
+    "fame": "fame-universe",
+    "fame-group": "famegroup-d85c1"
+  },
+  "targets": {},
+  "etags": {}
+}

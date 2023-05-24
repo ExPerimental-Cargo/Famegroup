@@ -1,0 +1,45 @@
+// font-family
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.4/dist/web/static/pretendard.css");
+@import url("https://use.typekit.net/qzs8vce.css");
+@font-face {
+  font-family: "slacklight";
+  src: url(../src/font/Slack-Light-6miepk.woff);
+}
+@font-face {
+  font-family: "aktiv-grotesk";
+  src: url(https://typekit.com/eulas/00000000000000003b9ad13a);
+}
+@mixin aktiv-xbold-font {
+  font-family: "aktiv-grotesk-extended", Helvetica, Arial, sans-serif;
+  font-weight: 800;
+}
+@mixin aktiv-bold-font {
+  font-family: "aktiv-grotesk-extended", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+}
+@mixin aktiv-medium-font {
+  font-family: "aktiv-grotesk-extended", fantasy;
+  font-weight: 500;
+}
+
+@mixin pretendard-bold-font {
+  font-family: "pretendard", Helvetica, Arial, sans-serif;
+  font-weight: 800;
+}
+@mixin pretendard-medium-font {
+  font-family: "pretendard", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+
+$slacklight-font: "slacklight", Helvetica, Arial, sans-serif;
+
+// color
+$primary-color: #6b1fff;
+$secondary-color: #3dd0b8;
+$background-color: #d9d9d9;
+$gray00: #e9e9e9;
+$gray01: #d9d9d9;
+$gray02: #8f8f8f;
+$gray03: #5b5b5b;
+$white: #fff;
+$black: #000;

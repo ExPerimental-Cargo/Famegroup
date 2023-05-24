@@ -1,0 +1,345 @@
+.container-video-company.background {
+  .video-background-company {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -11;
+  }
+}
+
+.container-main.company {
+  // 전체 적용
+  .title {
+    display: inline-block;
+    padding-left: 12.5vw;
+    background: rgba(196, 196, 196, 0.8);
+    backdrop-filter: blur(0.521vw);
+    line-height: 6.4vw;
+    color: $primary-color;
+    @include aktiv-xbold-font;
+    font-size: 5vw;
+    .slacklight {
+      font-family: $slacklight-font;
+      font-weight: 300;
+    }
+  }
+  .content {
+    @include pretendard-medium-font;
+    color: $primary-color;
+    font-size: 1.25vw;
+    line-height: 2.25vw;
+    letter-spacing: -0.03em;
+  }
+
+  // section-main
+  .section-main {
+    background-color: transparent;
+    text-align: center;
+    .wrapper-main-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      .title-main {
+        margin: 0;
+        padding-left: 0;
+        color: $white;
+        text-shadow: $white 0.01vw 0 0.4vw;
+        background-color: transparent;
+        backdrop-filter: blur(0);
+        font-size: 6.25vw;
+      }
+      .link-pdf {
+        display: inline-block;
+        margin-top: 2.083vw;
+        @include aktiv-xbold-font;
+        font-size: 1.25vw;
+        padding: 1.276vw 6.406vw;
+        background-color: $primary-color;
+        color: $white;
+        border-radius: 0.625vw;
+        transition: background 0.2s;
+        &:hover {
+          background: rgb(48, 0, 143);
+        }
+      }
+    }
+  }
+
+  .section-vision {
+    margin-bottom: 12.5vw;
+    margin-top: 100vh;
+    .title-vision {
+      background: rgba(196, 196, 196, 0.8);
+      backdrop-filter: blur(0.521vw);
+    }
+    .wrapper-vision {
+      margin-left: 24.115vw;
+      padding: 0 0 2.083vw 2.083vw;
+      background: rgba(196, 196, 196, 0.8);
+      backdrop-filter: blur(0.521vw);
+      color: $primary-color;
+      @include aktiv-xbold-font;
+      ol {
+        .txt-vision {
+          display: flex;
+          align-items: center;
+          margin-bottom: 2.083vw;
+          @include pretendard-bold-font;
+          font-size: 1.667vw;
+          .num-vision {
+            @include aktiv-xbold-font;
+            margin-right: 2.083vw;
+            font-size: 5vw;
+            line-height: 6.4vw;
+          }
+        }
+      }
+      .container-symbol {
+        display: flex;
+        gap: 2.083vw;
+        .wrapper-symbol {
+          display: flex;
+          flex-direction: column;
+          width: 28.542vw;
+          .txt-symbol {
+            font-size: 1.667vw;
+            margin-bottom: 0.521vw;
+            line-height: 3vw;
+            letter-spacing: -0.03em;
+          }
+          .wrapper-color {
+            display: flex;
+            align-items: center;
+            gap: 1.042vw;
+            @include pretendard-medium-font;
+            font-size: 1.25vw;
+            line-height: 1.875vw;
+            .box-color {
+              width: 7.813vw;
+              height: 7.813vw;
+              background-color: $primary-color;
+            }
+          }
+          .symbol-guide-line {
+            height: 18.1vw;
+          }
+        }
+      }
+    }
+  }
+
+  .section-slogan {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12.5vw;
+    .wrapper-content {
+      padding: 1.042vw 6.25vw 1.042vw 4.844vw;
+      background: rgba(196, 196, 196, 0.8);
+      backdrop-filter: blur(0.521vw);
+      .txt-slogan {
+        margin-bottom: 2.083vw;
+        font-size: 3.333vw;
+        line-height: 3.333vw;
+      }
+      .title {
+        padding: 0;
+        background: transparent;
+        backdrop-filter: blur(0);
+      }
+      span,
+      h3 {
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+
+  .section-corporations {
+    .wrapper-corporations {
+      display: flex;
+      gap: 1.042vw;
+      margin: 0 12.5vw 12.5vw 12.5vw;
+      padding: 4.583vw 2.083vw 4.583vw;
+      background: rgba(196, 196, 196, 0.8);
+      backdrop-filter: blur(0.521vw);
+      .card-corporations {
+        width: 17.188vw;
+        padding-top: 15.625vw;
+        background-image: url(../src/img/corporations/corporations_group.svg);
+        background-repeat: no-repeat;
+        background-size: 17vw 2.604vw;
+        background-position: center 6.2vw;
+        text-align: center;
+        &:nth-child(2) {
+          width: 34.375vw;
+          background-image: url(../src/img/corporations/corporations_fame.svg);
+          background-size: 11.12vw 7.526vw; 
+          background-position: center 3.5vw;
+        }
+        &:nth-child(3) {
+          background-image: url(../src/img/corporations/corporations_xfame.svg);
+          background-size: 15.417vw 2.604vw;
+          background-position: center 6.5vw;
+        }
+        .txt-corporations {
+          @include pretendard-bold-font;
+          color: $primary-color;
+          font-size: 1.25vw;
+          line-height: 1.2;
+        }
+        .txt-corporations-locations {
+          @include pretendard-medium-font;
+          padding-top: 50;
+          color: $primary-color;
+          font-size: 1vw;
+          line-height: 1.2;
+        }
+      }
+    }
+  }
+}
+
+.wrapper-footer.company {
+  border-top: 0;
+}
+
+@media (max-width: 767px) {
+  .container-main.company {
+    // section-main
+    .section-main {
+      .wrapper-main-content {
+        .title-main {
+          font-size: 8.889vw;
+        }
+        .link-pdf {
+          margin-top: 4.444vw;
+          width: 100%;
+          font-size: 3.333vw;
+          padding: 3.472vw 0;
+          border-radius: 1.667vw;
+        }
+      }
+    }
+
+    // section-vision
+    .section-vision {
+      margin-bottom: 22.458vw;
+      .title-vision {
+        padding-left: 4.444vw;
+        font-size: 8.889vw;
+        line-height: 10.667vw;
+      }
+      .wrapper-vision {
+        margin-left: 20vw;
+        padding: 4.444vw;
+        ol {
+          .txt-vision {
+            margin-bottom: 2.778vw;
+            font-size: 4.2vw;
+            line-height: 6.667vw;
+            word-break: break-all;
+            .num-vision {
+              margin-right: 4.444vw;
+              font-size: 8.889vw;
+              line-height: 11.378vw;
+            }
+          }
+        }
+        .container-symbol {
+          flex-direction: column;
+          gap: 2.778vw;
+          .wrapper-symbol {
+            width: 100%;
+            .txt-symbol {
+              margin-bottom: 2.778vw;
+              font-size: 4.444vw;
+              line-height: 8vw;
+            }
+            .symbol-guide-line {
+              height: 45vw;
+            }
+            .wrapper-color {
+              gap: 3.333vw;
+              font-size: 3.333vw;
+              line-height: 5vw;
+              .box-color {
+                width: 20vw;
+                height: 20vw;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // section-slogan
+    .section-slogan {
+      flex-direction: column;
+      margin-bottom: 22.222vw;
+      .title-slogan {
+        padding-left: 20vw;
+        font-size: 8.889vw;
+        line-height: 11.378vw;
+      }
+      .wrapper-content {
+        margin-left: 20vw;
+        padding: 4.444vw;
+        .txt-slogan {
+          margin-bottom: 4.444vw;
+          font-size: 5.556vw;
+          line-height: 5.556vw;
+        }
+        .content-slogan {
+          font-size: 3.333vw;
+          line-height: 6vw;
+        }
+      }
+    }
+
+    // section-corporations
+    .section-corporations {
+      .title-corporations {
+        padding-left: 4.444vw;
+        font-size: 8.889vw;
+        line-height: 11.378vw;
+      }
+      .wrapper-corporations {
+        flex-direction: column;
+        gap: 13.889vw;
+        margin: 0 4.444vw 20vw 4.444vw;
+        padding: 12.5vw 0 35vw;
+        .card-corporations {
+          width: 100%;
+          padding-top: 60vw;
+          background-image: url(../src/img/corporations/corporations_group.svg);
+          background-repeat: no-repeat;
+          background-size: 66.667vw 70vw;
+          text-align: center;
+          &:nth-child(2) {
+            margin-top: 35vw;
+            width: 100%;
+            background-image: url(../src/img/corporations/corporations_fame.svg);
+            background-repeat: no-repeat;
+            background-size: 61.667vw 41.736vw;
+            text-align: center;
+          }
+          &:nth-child(3) {
+            background-image: url(../src/img/corporations/corporations_xfame.svg);
+            background-size: 66.667vw 11.667vw;
+            background-position: center 33vw;
+          }
+          .txt-corporations {
+            font-size: 4.444vw;
+            
+          }
+          .txt-corporations-locations{
+            font-size: 3.333vw;
+          }
+        }
+      }
+    }
+  }
+}
